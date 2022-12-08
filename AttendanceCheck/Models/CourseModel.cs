@@ -2,7 +2,7 @@
 {
     public class CourseModel
     {
-        public string Id { get; set; }
+        public string StringId { get; set; }
 
     }
 }

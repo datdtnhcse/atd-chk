@@ -24,8 +24,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU3R1ZGVudExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/TeacherList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/CheckOut/CheckOut_AddStd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tPdXRcQ2hlY2tPdXRfQWRkU3RkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/CheckOut/CheckOut_AddTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tPdXRcQ2hlY2tPdXRfQWRkVGVhY2hlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/Error.cshtml]
@@ -34,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/Form/AddStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVxBZGRTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Form/AddTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVxBZGRUZWFjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/Index.cshtml]

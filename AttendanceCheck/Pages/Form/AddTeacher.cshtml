@@ -1,5 +1,5 @@
 ﻿@page
-@model AttendanceCheck.Pages.Forms.AddStudentModel
+@model AttendanceCheck.Pages.Forms.AddTeacherModel
 @{
 }
 
@@ -8,29 +8,27 @@
 }
 
 <div class="text-center container">
-    <h1>Add your new student!</h1>
+    <h1>Add your new teacher!</h1>
     <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 bg-light col-4">
         <div class="form-group">
             <label class="left">Username</label>
-            <input type="text" class="form-control" asp-for="Student.Username" placeholder="Enter username">
+            <input type="text" class="form-control" asp-for="Teacher.Username" placeholder="Enter username">
         </div>
-        <br/>
+        <br />
         <div class="form-group">
             <label class="left">Password</label>
-            <input type="text" class="form-control" asp-for="Student.Password" placeholder="Enter password">
+            <input type="text" class="form-control" asp-for="Teacher.Password" placeholder="Enter password">
         </div>
         <br />
         <div class="form-group">
             <label class="left">Name</label>
-            <input type="text" class="form-control" asp-for="Student.Name" placeholder="Enter name">
+            <input type="text" class="form-control" asp-for="Teacher.Name" placeholder="Enter name">
         </div>
         <br />
         <div class="form-group">
             <label class="left">Phone number</label>
-            <input type="text" class="form-control" asp-for="Student.PhoneNumber" placeholder="Enter phone number">
+            <input type="text" class="form-control" asp-for="Teacher.PhoneNumber" placeholder="Enter phone number">
         </div>
-    
-
         <br />
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

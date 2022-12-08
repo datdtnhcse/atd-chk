@@ -1,0 +1,17 @@
+﻿@page
+@model AttendanceCheck.Pages.CheckOut.CheckOut_AddTeacherModel
+@{
+}
+
+@{
+    Layout = "_Layout_Admin";
+}
+
+<h1>Your Student</h1>
+<div class="align-content-center">
+    <div>
+        <p>Add student with the username - @Model.Username completely!</p>
+        <br />
+        <a class="btn alert-primary mt-1 mx-auto" asp-area="" asp-page="/Admin/TeacherList">Confirm</a>
+    </div>
+</div>

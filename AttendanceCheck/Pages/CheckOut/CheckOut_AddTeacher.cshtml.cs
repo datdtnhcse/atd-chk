@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace AttendanceCheck.Pages.CheckOut
 {
     [BindProperties(SupportsGet = true)]
-    public class CheckOut_AddStdModel : PageModel
+    public class CheckOut_AddTeacherModel : PageModel
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -18,20 +18,20 @@ namespace AttendanceCheck.Pages.CheckOut
         public string Phonenumber { get; set; }
 
         private readonly ApplicationDbContext _context;
-        public CheckOut_AddStdModel(ApplicationDbContext context)
+        public CheckOut_AddTeacherModel(ApplicationDbContext context)
         {
             _context = context;
         }
         public void OnGet()
         {
-            StudentModel Student = new StudentModel();
-            Student.Id = Id;
-            Student.Username = Username;
-            Student.Password = Password;
-            Student.Name = Name;
-            Student.PhoneNumber = Phonenumber;
+            TeacherModel Teacher = new TeacherModel();
+            Teacher.Id = Id;
+            Teacher.Username = Username;
+            Teacher.Password = Password;
+            Teacher.Name = Name;
+            Teacher.PhoneNumber = Phonenumber;
 
-            _context.Students.Add(Student);
+            _context.Teachers.Add(Teacher);
             _context.SaveChanges();
         }
     }

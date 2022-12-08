@@ -1,5 +1,5 @@
 ﻿@page
-@model AttendanceCheck.Pages.StudentListModel
+@model AttendanceCheck.Pages.TeacherListModel
 @{
 }
 
@@ -8,7 +8,7 @@
 }
 
 <h3>Student List</h3>
-<a class="btn btn-primary mt-1" asp-area="" asp-page="/Form/AddStudent">Add new student</a>
+<a class="btn btn-primary mt-1" asp-area="" asp-page="/Form/AddTeacher">Add new teacher</a>
 <hr />
 
 <table class="table">
@@ -26,7 +26,7 @@
         </tr>
     </thread>
     <tbody>
-        @foreach (var order in Model.Students)
+        @foreach (var order in Model.Teachers)
         {
             <tr>
                 <td>
