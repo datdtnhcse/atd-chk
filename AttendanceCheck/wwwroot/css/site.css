@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.left {
+    text-align: left;
+    float: left;
+}

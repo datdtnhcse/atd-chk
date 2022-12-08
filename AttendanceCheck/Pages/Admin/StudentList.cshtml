@@ -1,0 +1,59 @@
+﻿@page
+@model AttendanceCheck.Pages.StudentListModel
+@{
+}
+
+<h3>Student List</h3>
+<a class="btn btn-primary mt-1" asp-area="" asp-page="/Form/AddStudent">Add new student</a>
+<hr />
+
+<table class="table">
+    <thread>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Phone Number
+            </th>
+            <th>
+                Course 1
+            </th>
+            <th>
+                Course 2
+            </th>
+            <th>
+                Course 3
+            </th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach (var order in Model.Students)
+        {
+            <tr>
+                <td>
+                    @order.Id
+                </td>
+                <td>
+                    @order.Name
+                </td>
+                <td>
+                    @order.PhoneNumber
+                </td>
+                <td>
+                    @order.ClassId1
+                </td>
+                <td>
+                    @order.ClassId2
+                </td>
+                <td>
+                    @order.ClassId3
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

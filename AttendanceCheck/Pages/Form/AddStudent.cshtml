@@ -1,0 +1,65 @@
+﻿@page
+@model AttendanceCheck.Pages.Forms.AddStudentModel
+@{
+}
+
+<div class="text-center container">
+    <h1>Add your new student!</h1>
+    @*<form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 bg-light col-4">
+        <input type="text" asp-for="Student.Username" placeholder="Enter username" />
+        <br />
+        <input type="text" asp-for="Student.Password" placeholder="Enter password" />
+        <br />
+        <input type="text" asp-for="Student.Name" placeholder="Enter fullname" />
+        <br />
+        <input type="text" asp-for="Student.PhoneNumber" placeholder="Enter phone number" />
+        <br />
+        <input type="text" asp-for="Student.ClassId1" placeholder="Course" />
+        <br />
+        <input type="text" asp-for="Student.ClassId2" placeholder="Course" />
+        <br />
+        <input type="text" asp-for="Student.ClassId3" placeholder="Course" />
+        <br />
+        <button class="btn btn-primary mt-1" type="submit">Complete</button>
+    </form>*@
+
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 bg-light col-4">
+        <div class="form-group">
+            <label class="left">Username</label>
+            <input type="text" class="form-control" asp-for="Student.Username" placeholder="Enter username">
+        </div>
+        <br/>
+        <div class="form-group">
+            <label class="left">Password</label>
+            <input type="text" class="form-control" asp-for="Student.Password" placeholder="Enter password">
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="left">Name</label>
+            <input type="text" class="form-control" asp-for="Student.Name" placeholder="Enter name">
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="left">Phone number</label>
+            <input type="text" class="form-control" asp-for="Student.PhoneNumber" placeholder="Enter phone number">
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="left">CourseId</label>
+            <input type="text" class="form-control" asp-for="Student.ClassId1" placeholder="Enter course">
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="left">CourseId</label>
+            <input type="text" class="form-control" asp-for="Student.ClassId2" placeholder="Enter course">
+        </div>
+        <br />
+        <div class="form-group">
+            <label class="left">CourseId</label>
+            <input type="text" class="form-control" asp-for="Student.ClassId3" placeholder="Enter course">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
