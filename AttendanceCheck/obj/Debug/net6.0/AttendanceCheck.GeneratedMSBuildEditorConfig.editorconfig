@@ -28,6 +28,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/Teacher/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/Teacher/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/Teacher/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/Teacher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/Admin/Teacher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGVhY2hlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/CheckOut/CheckOut_AddStd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tPdXRcQ2hlY2tPdXRfQWRkU3RkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
