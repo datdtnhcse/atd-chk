@@ -10,11 +10,11 @@ namespace AttendanceCheck.Models
         [Key]
         public int Id { get; set; }
         [DisallowNull]
-        public string Username { get; set; }
+        public string Username { get; set; } = "NoUsername";
         [DisallowNull]
-        public string Password { get; set; }
+        public string Password { get; set; } = "NoPassword";
         [DisallowNull]
-        public string Name { get; set; }
-        public string PhoneNumber { get; set; }
+        public string Name { get; set; } = "Anonymous";
+        public string PhoneNumber { get; set; } = "NoPhone";
     }
 }

@@ -5,10 +5,10 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace AttendanceCheck.Models
 {
-    public class CourseModel
+    [PrimaryKey(nameof(TeacherId), nameof(CourseId))]
+    public class TeacherCourseModel
     {
-        [Key]
+        public int TeacherId { get; set; } = 0;
         public string CourseId { get; set; } = "NoId";
-
     }
 }

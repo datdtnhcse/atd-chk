@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Admin\Student\**" />
+    <Compile Remove="Pages\Admin\Teacher\**" />
+    <Content Remove="Pages\Admin\Student\**" />
+    <Content Remove="Pages\Admin\Teacher\**" />
+    <EmbeddedResource Remove="Pages\Admin\Student\**" />
+    <EmbeddedResource Remove="Pages\Admin\Teacher\**" />
+    <None Remove="Pages\Admin\Student\**" />
+    <None Remove="Pages\Admin\Teacher\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
@@ -27,7 +38,9 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Pages\Admin\Teacher\" />
+    <Folder Include="Pages\List\StudentCourseList\" />
+    <Folder Include="Pages\List\TeacherList\" />
+    <Folder Include="Pages\List\StudentList\" />
     <Folder Include="Pages\Supervisor\" />
   </ItemGroup>
 

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using AttendanceCheck.Data;
 using AttendanceCheck.Models;
 
-namespace AttendanceCheck.Pages_Admin_Student
+namespace AttendanceCheck.Pages_List_StudentCourseList
 {
     public class DetailsModel : PageModel
     {
@@ -19,23 +19,23 @@ namespace AttendanceCheck.Pages_Admin_Student
             _context = context;
         }
 
-      public TeacherModel TeacherModel { get; set; } = default!; 
+      public StudentCourseModel StudentCourseModel { get; set; } = default!; 
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Teachers == null)
+            if (id == null || _context.StudentCourses == null)
             {
                 return NotFound();
             }
 
-            var teachermodel = await _context.Teachers.FirstOrDefaultAsync(m => m.Id == id);
-            if (teachermodel == null)
+            var studentcoursemodel = await _context.StudentCourses.FirstOrDefaultAsync(m => m.StudentId == id);
+            if (studentcoursemodel == null)
             {
                 return NotFound();
             }
             else 
             {
-                TeacherModel = teachermodel;
+                StudentCourseModel = studentcoursemodel;
             }
             return Page();
         }

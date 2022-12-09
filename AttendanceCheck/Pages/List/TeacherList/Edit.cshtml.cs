@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using AttendanceCheck.Data;
 using AttendanceCheck.Models;
 
-namespace AttendanceCheck.Pages_Admin_Student
+namespace AttendanceCheck.Pages_List_TeacherList
 {
     public class EditModel : PageModel
     {

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using AttendanceCheck.Data;
 using AttendanceCheck.Models;
 
-namespace AttendanceCheck.Pages_Admin_Student
+namespace AttendanceCheck.Pages_List_TeacherList
 {
     public class CreateModel : PageModel
     {
