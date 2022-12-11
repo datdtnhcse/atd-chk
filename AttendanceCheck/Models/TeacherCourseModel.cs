@@ -5,10 +5,16 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace AttendanceCheck.Models
 {
-    [PrimaryKey(nameof(TeacherId), nameof(CourseId))]
+    [Keyless]
     public class TeacherCourseModel
     {
-        public int TeacherId { get; set; } = 0;
-        public string CourseId { get; set; } = "NoId";
+        public int? TeacherId { get; set; }
+        [ForeignKey("TeacherId")]
+        public virtual TeacherModel TeacherModel { get; set; }
+
+
+        public string? CourseId { get; set; }
+        [ForeignKey("CourseId")]
+        public virtual CourseModel CourseModel { get; set; }
     }
 }

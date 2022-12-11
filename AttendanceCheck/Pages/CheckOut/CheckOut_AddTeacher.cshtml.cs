@@ -11,7 +11,7 @@ namespace AttendanceCheck.Pages.CheckOut
     public class CheckOut_AddTeacherModel : PageModel
     {
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public string Username { get; set; }
         public string Password { get; set; }
         public string Name { get; set; }

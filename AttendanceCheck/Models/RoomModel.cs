@@ -8,6 +8,6 @@ namespace AttendanceCheck.Models
     public class RoomModel
     {
         [Key]
-        public int number { get; set; }
+        public int Id { get; set; }
     }
 }
