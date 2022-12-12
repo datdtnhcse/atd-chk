@@ -12,10 +12,6 @@ namespace AttendanceCheck.Data
         public DbSet<CourseModel> Courses { get; set; }
         public DbSet<RoomModel> Rooms { get; set; }
         public DbSet<ClassModel> Classes { get; set; }
-        public DbSet<StudentCourseModel> StudentCourses { get; set; }
-        public DbSet<TeacherCourseModel> TeacherCourses { get; set; }
-        public DbSet<CourseClassModel> CourseClass { get; set; }
-        public DbSet<CourseRoomModel> CourseRoom { get; set; }
      
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -23,6 +19,5 @@ namespace AttendanceCheck.Data
         {
 
         }
-        public DbSet<AttendanceCheck.Models.CourseClassModel>? CourseClassModel { get; set; }
     }
 }

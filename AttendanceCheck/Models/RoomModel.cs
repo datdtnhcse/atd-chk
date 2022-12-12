@@ -9,5 +9,7 @@ namespace AttendanceCheck.Models
     {
         [Key]
         public int Id { get; set; }
+        public virtual ICollection<CourseModel> Courses { get; set; }
     }
+
 }

@@ -9,12 +9,10 @@ namespace AttendanceCheck.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Id { get; set; }
-        [DisallowNull]
         public string Username { get; set; } = "NoUsername";
-        [DisallowNull]
         public string Password { get; set; } = "NoPassword";
-        [DisallowNull]
         public string Name { get; set; } = "Anonymous";
         public string PhoneNumber { get; set; } = "NoPhone";
+        public virtual ICollection<CourseModel> Courses { get; set; }
     }
 }

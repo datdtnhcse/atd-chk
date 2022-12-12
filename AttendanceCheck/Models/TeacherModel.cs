@@ -13,6 +13,6 @@ namespace AttendanceCheck.Models
         public string Password { get; set; } = "pwd";
         public string Name { get; set; } = "Anonymous";
         public string PhoneNumber { get; set; } = "0000000000";
-        
+        public virtual ICollection<CourseModel> Courses { get; set; }
     }
 }
