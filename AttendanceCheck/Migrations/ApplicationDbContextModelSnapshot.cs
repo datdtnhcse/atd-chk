@@ -42,33 +42,6 @@ namespace AttendanceCheck.Migrations
                     b.ToTable("Admins");
                 });
 
-            modelBuilder.Entity("AttendanceCheck.Models.ClassModel", b =>
-                {
-                    b.Property<int>("ClassId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClassId"));
-
-                    b.Property<string>("CoursesId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("Day")
-                        .HasColumnType("int");
-
-                    b.Property<int>("End")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Start")
-                        .HasColumnType("int");
-
-                    b.HasKey("ClassId");
-
-                    b.HasIndex("CoursesId");
-
-                    b.ToTable("Classes");
-                });
-
             modelBuilder.Entity("AttendanceCheck.Models.CourseModel", b =>
                 {
                     b.Property<string>("Id")
@@ -83,17 +56,29 @@ namespace AttendanceCheck.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("AttendanceCheck.Models.RoomModel", b =>
+            modelBuilder.Entity("AttendanceCheck.Models.RoomClassModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("RoomClassId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RoomClassId"));
 
-                    b.HasKey("Id");
+                    b.Property<int>("Day")
+                        .HasColumnType("int");
 
-                    b.ToTable("Rooms");
+                    b.Property<int>("End")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Room")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Start")
+                        .HasColumnType("int");
+
+                    b.HasKey("RoomClassId");
+
+                    b.ToTable("RoomClasses");
                 });
 
             modelBuilder.Entity("AttendanceCheck.Models.StudentModel", b =>
@@ -154,19 +139,19 @@ namespace AttendanceCheck.Migrations
                     b.ToTable("Teachers");
                 });
 
-            modelBuilder.Entity("CourseModelRoomModel", b =>
+            modelBuilder.Entity("CourseModelRoomClassModel", b =>
                 {
                     b.Property<string>("CoursesId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("RoomsId")
+                    b.Property<int>("RoomClassesRoomClassId")
                         .HasColumnType("int");
 
-                    b.HasKey("CoursesId", "RoomsId");
+                    b.HasKey("CoursesId", "RoomClassesRoomClassId");
 
-                    b.HasIndex("RoomsId");
+                    b.HasIndex("RoomClassesRoomClassId");
 
-                    b.ToTable("CourseModelRoomModel");
+                    b.ToTable("CourseModelRoomClassModel");
                 });
 
             modelBuilder.Entity("CourseModelStudentModel", b =>
@@ -199,16 +184,7 @@ namespace AttendanceCheck.Migrations
                     b.ToTable("CourseModelTeacherModel");
                 });
 
-            modelBuilder.Entity("AttendanceCheck.Models.ClassModel", b =>
-                {
-                    b.HasOne("AttendanceCheck.Models.CourseModel", "Courses")
-                        .WithMany("Classes")
-                        .HasForeignKey("CoursesId");
-
-                    b.Navigation("Courses");
-                });
-
-            modelBuilder.Entity("CourseModelRoomModel", b =>
+            modelBuilder.Entity("CourseModelRoomClassModel", b =>
                 {
                     b.HasOne("AttendanceCheck.Models.CourseModel", null)
                         .WithMany()
@@ -216,9 +192,9 @@ namespace AttendanceCheck.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AttendanceCheck.Models.RoomModel", null)
+                    b.HasOne("AttendanceCheck.Models.RoomClassModel", null)
                         .WithMany()
-                        .HasForeignKey("RoomsId")
+                        .HasForeignKey("RoomClassesRoomClassId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -251,11 +227,6 @@ namespace AttendanceCheck.Migrations
                         .HasForeignKey("TeachersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("AttendanceCheck.Models.CourseModel", b =>
-                {
-                    b.Navigation("Classes");
                 });
 #pragma warning restore 612, 618
         }

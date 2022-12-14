@@ -1,0 +1,54 @@
+@page
+@model AttendanceCheck.Pages_List_RoomClassList.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomClassModel[0].Day)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomClassModel[0].Start)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomClassModel[0].End)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomClassModel[0].Room)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.RoomClassModel) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Day)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Start)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.End)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.RoomClassId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.RoomClassId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.RoomClassId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

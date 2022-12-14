@@ -44,6 +44,86 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/CourseList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxDb3Vyc2VMaXN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/CourseList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxDb3Vyc2VMaXN0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/CourseList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxDb3Vyc2VMaXN0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/CourseList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxDb3Vyc2VMaXN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/CourseList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxDb3Vyc2VMaXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/RoomClassList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxSb29tQ2xhc3NMaXN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/RoomClassList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxSb29tQ2xhc3NMaXN0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/RoomClassList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxSb29tQ2xhc3NMaXN0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/RoomClassList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxSb29tQ2xhc3NMaXN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/RoomClassList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxSb29tQ2xhc3NMaXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/StudentList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxTdHVkZW50TGlzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/StudentList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxTdHVkZW50TGlzdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/StudentList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxTdHVkZW50TGlzdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/StudentList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxTdHVkZW50TGlzdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/StudentList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxTdHVkZW50TGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/TeacherList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxUZWFjaGVyTGlzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/TeacherList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxUZWFjaGVyTGlzdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/TeacherList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxUZWFjaGVyTGlzdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/TeacherList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxUZWFjaGVyTGlzdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/AttendanceCheck/AttendanceCheck/Pages/List/TeacherList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdFxUZWFjaGVyTGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/AttendanceCheck/AttendanceCheck/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -10,8 +10,7 @@ namespace AttendanceCheck.Data
         public DbSet<TeacherModel> Teachers { get; set; }
         public DbSet<AdminModel> Admins { get; set; }
         public DbSet<CourseModel> Courses { get; set; }
-        public DbSet<RoomModel> Rooms { get; set; }
-        public DbSet<ClassModel> Classes { get; set; }
+        public DbSet<RoomClassModel> RoomClasses { get; set; }
      
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

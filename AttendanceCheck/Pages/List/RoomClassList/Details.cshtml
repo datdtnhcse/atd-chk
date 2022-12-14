@@ -1,0 +1,43 @@
+@page
+@model AttendanceCheck.Pages_List_RoomClassList.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>RoomClassModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoomClassModel.Day)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoomClassModel.Day)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoomClassModel.Start)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoomClassModel.Start)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoomClassModel.End)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoomClassModel.End)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RoomClassModel.Room)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RoomClassModel.Room)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.RoomClassModel?.RoomClassId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

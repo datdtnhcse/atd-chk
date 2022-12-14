@@ -5,7 +5,7 @@
 namespace AttendanceCheck.Migrations
 {
     /// <inheritdoc />
-    public partial class addDb : Migration
+    public partial class adddatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -37,15 +37,19 @@ namespace AttendanceCheck.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Rooms",
+                name: "RoomClasses",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1")
+                    RoomClassId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Day = table.Column<int>(type: "int", nullable: false),
+                    Start = table.Column<int>(type: "int", nullable: false),
+                    End = table.Column<int>(type: "int", nullable: false),
+                    Room = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Rooms", x => x.Id);
+                    table.PrimaryKey("PK_RoomClasses", x => x.RoomClassId);
                 });
 
             migrationBuilder.CreateTable(
@@ -81,47 +85,26 @@ namespace AttendanceCheck.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Classes",
-                columns: table => new
-                {
-                    ClassId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Day = table.Column<int>(type: "int", nullable: false),
-                    Start = table.Column<int>(type: "int", nullable: false),
-                    End = table.Column<int>(type: "int", nullable: false),
-                    CoursesId = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Classes", x => x.ClassId);
-                    table.ForeignKey(
-                        name: "FK_Classes_Courses_CoursesId",
-                        column: x => x.CoursesId,
-                        principalTable: "Courses",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "CourseModelRoomModel",
+                name: "CourseModelRoomClassModel",
                 columns: table => new
                 {
                     CoursesId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    RoomsId = table.Column<int>(type: "int", nullable: false)
+                    RoomClassesRoomClassId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CourseModelRoomModel", x => new { x.CoursesId, x.RoomsId });
+                    table.PrimaryKey("PK_CourseModelRoomClassModel", x => new { x.CoursesId, x.RoomClassesRoomClassId });
                     table.ForeignKey(
-                        name: "FK_CourseModelRoomModel_Courses_CoursesId",
+                        name: "FK_CourseModelRoomClassModel_Courses_CoursesId",
                         column: x => x.CoursesId,
                         principalTable: "Courses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CourseModelRoomModel_Rooms_RoomsId",
-                        column: x => x.RoomsId,
-                        principalTable: "Rooms",
-                        principalColumn: "Id",
+                        name: "FK_CourseModelRoomClassModel_RoomClasses_RoomClassesRoomClassId",
+                        column: x => x.RoomClassesRoomClassId,
+                        principalTable: "RoomClasses",
+                        principalColumn: "RoomClassId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -174,14 +157,9 @@ namespace AttendanceCheck.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Classes_CoursesId",
-                table: "Classes",
-                column: "CoursesId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CourseModelRoomModel_RoomsId",
-                table: "CourseModelRoomModel",
-                column: "RoomsId");
+                name: "IX_CourseModelRoomClassModel_RoomClassesRoomClassId",
+                table: "CourseModelRoomClassModel",
+                column: "RoomClassesRoomClassId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CourseModelStudentModel_StudentsId",
@@ -201,10 +179,7 @@ namespace AttendanceCheck.Migrations
                 name: "Admins");
 
             migrationBuilder.DropTable(
-                name: "Classes");
-
-            migrationBuilder.DropTable(
-                name: "CourseModelRoomModel");
+                name: "CourseModelRoomClassModel");
 
             migrationBuilder.DropTable(
                 name: "CourseModelStudentModel");
@@ -213,7 +188,7 @@ namespace AttendanceCheck.Migrations
                 name: "CourseModelTeacherModel");
 
             migrationBuilder.DropTable(
-                name: "Rooms");
+                name: "RoomClasses");
 
             migrationBuilder.DropTable(
                 name: "Students");
